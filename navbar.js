@@ -18,13 +18,13 @@ document.addEventListener('DOMContentLoaded', function() {
 });
 
 document.addEventListener("DOMContentLoaded", function () {
-    const sections = document.querySelectorAll("section"); // your sections must have <section id="home">, etc.
+    const sections = document.querySelectorAll("section"); 
     const navLinks = document.querySelectorAll(".nav-link");
 
     window.addEventListener("scroll", () => {
         let current = "";
         sections.forEach(section => {
-            const sectionTop = section.offsetTop - 80; // adjust for navbar height
+            const sectionTop = section.offsetTop - 80;
             const sectionHeight = section.clientHeight;
             if (pageYOffset >= sectionTop && pageYOffset < sectionTop + sectionHeight) {
                 current = section.getAttribute("id");
