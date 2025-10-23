@@ -133,6 +133,29 @@ text-align: center;
   }
 }
 
+.card:hover {
+  border: 2px solid transparent;
+  background-image: linear-gradient(#fff, #fff),
+    linear-gradient(135deg, #00aaff, #66d1ff);
+  background-origin: border-box;
+  background-clip: content-box, border-box;
+  box-shadow: 0 0 25px rgba(0, 170, 255, 0.4);
+  transform: translateY(-5px);
+  animation: glowPulse 2s infinite ease-in-out;
+}
+
+/* Soft pulsating glow animation */
+@keyframes glowPulse {
+  0% {
+    box-shadow: 0 0 15px rgba(0, 170, 255, 0.4);
+  }
+  50% {
+    box-shadow: 0 0 35px rgba(0, 170, 255, 0.7);
+  }
+  100% {
+    box-shadow: 0 0 15px rgba(0, 170, 255, 0.4);
+  }
+}
 
 .section-padding {
     padding: 60px 0;
